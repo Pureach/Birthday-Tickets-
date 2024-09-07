@@ -15,14 +15,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f0f4f7;
         }
 
         /* Ticket container */
         .ticket {
             background-color: #ffffff;
-            width: 650px;
+            max-width: 650px;
+            width: 100%;
             padding: 1.5rem;
             border-radius: 12px;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -30,6 +31,8 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            box-sizing: border-box;
+            margin: 1rem;
         }
 
         /* Header styles */
@@ -61,11 +64,14 @@
             align-items: flex-start;
             margin-top: 1rem;
             gap: 1.5rem;
+            flex-wrap: wrap;
         }
 
         .ticket-details .info {
             font-size: 1rem;
             line-height: 1.6;
+            flex: 1;
+            min-width: 250px;
         }
 
         .ticket-details .info p {
@@ -79,26 +85,12 @@
             margin: 0.75rem 0;
         }
 
-        /* Circular date indicator */
-        .ticket-date {
-            background-color: #f0f4f7;
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #4b6584;
-            border: 2px solid #ddd;
-        }
-
         /* RSVP and Pay buttons */
         .button-group {
             display: flex;
             justify-content: flex-start;
             gap: 1rem;
+            flex-wrap: wrap;
         }
 
         .rsvp-button, .pay-now-button {
@@ -111,6 +103,9 @@
             font-weight: bold;
             box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+            flex: 1;
+            text-align: center;
+            min-width: 150px;
         }
 
         .rsvp-button:hover, .pay-now-button:hover {
@@ -134,8 +129,52 @@
 
         .picture-container img {
             border-radius: 10px;
-            max-width: 100%;
+            width: 100%;
             height: auto;
+            max-width: 600px;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .ticket-header h1 {
+                font-size: 1.25rem;
+            }
+
+            .ticket-header p {
+                font-size: 0.9rem;
+            }
+
+            .ticket-details .info {
+                font-size: 0.95rem;
+            }
+
+            .rsvp-button, .pay-now-button {
+                padding: 0.65rem 1.2rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ticket {
+                padding: 1rem;
+            }
+
+            .ticket-header h1 {
+                font-size: 1.1rem;
+            }
+
+            .ticket-header p {
+                font-size: 0.85rem;
+            }
+
+            .ticket-details .info {
+                font-size: 0.9rem;
+            }
+
+            .rsvp-button, .pay-now-button {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -149,7 +188,7 @@
 
         <!-- Image Section -->
         <div class="picture-container">
-            <img src="https://github.com/Pureach/Birthday-Tickets-/raw/e731fdef1d43f016f0734a073ef55578c49cdfcc/photo_2023-08-26_22-41-15.jpg" alt="Event Image">
+            <img src="https://github.com/Pureach/Birthday-Tickets-/raw/e731fdef1d43f016f0734a073ef55578c49cdfcc/photo_2023-08-26_22-41-15.jpg" alt="រូបភាពពិធីជប់លៀង">
         </div>
 
         <!-- Event Details -->
@@ -158,7 +197,7 @@
             <div class="info">
                 <p><strong>កាលបរិច្ឆេទ:</strong> 📅 ថ្ងៃទី ២២ ខែតុលា ឆ្នាំ ២០២៤</p>
                 <p><strong>ម៉ោង:</strong> ⏰ 7:00 ល្ងាច</p>
-                <p><strong>ទីកន្លែង:</strong> 📍 ផ្ទះលេខ 44 ផ្លូវ F បុរីពិភពថ្មីឈូកវ៉ា1 ភូមិ ភ្លូផ្អែម សង្កាត់គោករកា ខណ្ឌ័ព្រែកព្នៅ រាជធានីភ្នំពេញ</p>
+                <p><strong>ទីកន្លែង:</strong> 📍 ផ្ទះលេខ 44 ផ្លូវ F បុរីពិភពថ្មីឈូកវ៉ា1 ភូមិ ភ្លូផ្អែម សង្កាត់គោករកា ខណ្ឌព្រែកព្នៅ រាជធានីភ្នំពេញ</p>
             </div>
         </div>
 
@@ -167,7 +206,7 @@
         <!-- RSVP and Pay Buttons -->
         <div class="button-group">
             <a href="https://t.me/t_reach" class="rsvp-button" target="_blank">បញ្ជាក់ការមកចូលរួម 💌</a>
-            <a href="https://pay.ababank.com/SwoM9qNr1Cj6q18s5" class="pay-now-button" target="_blank">កួចដៃ 💳</a>
+            <a href="https://pay.ababank.com/SwoM9qNr1Cj6q18s5" class="pay-now-button" target="_blank">គោរពទិវា 💳</a>
         </div>
 
         <!-- Footer -->
