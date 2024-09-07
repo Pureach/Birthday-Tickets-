@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ការអញ្ជើញ - ពិធីខួបកំណើតរបស់ ទូន សុវណ្ណរាជ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Body */
+        body {
+            font-family: 'Noto Sans Khmer', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f4f7;
+        }
+
+        /* Ticket container */
+        .ticket {
+            background-color: #ffffff;
+            width: 650px;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Header styles */
+        .ticket-header {
+            background-color: #8ebae8;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .ticket-header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .ticket-header p {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Ticket info details */
+        .ticket-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 1rem;
+            gap: 1.5rem;
+        }
+
+        .ticket-details .info {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .ticket-details .info p {
+            margin: 0.5rem 0;
+        }
+
+        /* Divider line */
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 0.75rem 0;
+        }
+
+        /* Circular date indicator */
+        .ticket-date {
+            background-color: #f0f4f7;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #4b6584;
+            border: 2px solid #ddd;
+        }
+
+        /* RSVP and Pay buttons */
+        .button-group {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+
+        .rsvp-button, .pay-now-button {
+            background-color: #4b6584;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .rsvp-button:hover, .pay-now-button:hover {
+            background-color: #3d506b;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+        }
+
+        /* Picture container */
+        .picture-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .picture-container img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <!-- Ticket Header -->
+        <div class="ticket-header">
+            <h1>🎉 ការអញ្ជើញពិសេស</h1>
+            <p>សម្រាប់ខួបកំណើតរបស់ ទូន សុវណ្ណរាជ 🎂</p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="picture-container">
+            <img src="https://github.com/Pureach/Birthday-Tickets-/raw/e731fdef1d43f016f0734a073ef55578c49cdfcc/photo_2023-08-26_22-41-15.jpg" alt="Event Image">
+        </div>
+
+        <!-- Event Details -->
+        <div class="ticket-details">
+            <!-- Event Info -->
+            <div class="info">
+                <p><strong>កាលបរិច្ឆេទ:</strong> 📅 ថ្ងៃទី ២២ ខែតុលា ឆ្នាំ ២០២៤</p>
+                <p><strong>ម៉ោង:</strong> ⏰ 7:00 ល្ងាច</p>
+                <p><strong>ទីកន្លែង:</strong> 📍 ផ្ទះលេខ 44 ផ្លូវ F បុរីពិភពថ្មីឈូកវ៉ា1 ភូមិ ភ្លូផ្អែម សង្កាត់គោករកា ខណ្ឌ័ព្រែកព្នៅ រាជធានីភ្នំពេញ</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- RSVP and Pay Buttons -->
+        <div class="button-group">
+            <a href="https://t.me/t_reach" class="rsvp-button" target="_blank">បញ្ជាក់ការមកចូលរួម 💌</a>
+            <a href="https://pay.ababank.com/SwoM9qNr1Cj6q18s5" class="pay-now-button" target="_blank">កួចដៃ 💳</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>យើងរង់ចាំមើលការចូលរួមរបស់អ្នក! 😊</p>
+        </footer>
+    </div>
+</body>
+</html>
